@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Random User Generator</h1>
+            <div class="theme-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="toggleTheme">
+                    <span class="slider round"></span>
+                </label>
+                <span class="theme-text">Switch Theme</span>
+            </div>
+        </div>
+
+        <div class="user-card">
+            <div class="left-box">
+                <div class="user-image">
+                    <img id="userImage" src="" alt="User Image">
+                </div>
+                <p class="user-name" id="name"></p>
+            </div>
+            <div class="right-box">
+                <p><strong>Gender:</strong> <span id="gender"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Phone:</strong> <span id="phone"></span></p>
+                <p><strong>Location:</strong> <span id="location"></span></p>
+                <p><strong>Date of Birth:</strong> <span id="dob"></span></p>
+                <p><strong>Registered:</strong> <span id="registered"></span></p>
+                <p><strong>ID:</strong> <span id="id"></span></p>
+                <p><strong>Username:</strong> <span id="username"></span></p>
+                <p><strong>Password:</strong> <span id="password"></span></p>
+                <p><strong>Nationality:</strong> <span id="nationality"></span></p>
+                <p><strong>Timezone:</strong> <span id="timezone"></span></p>
+            </div>
+        </div>
+        <button onclick="fetchUser()">Generate New User</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

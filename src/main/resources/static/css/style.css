@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 750px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border: 2px solid #ff9800;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 2px solid #ff9800;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.left-box {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.right-box {
+    flex: 2;
+    text-align: left;
+}
+
+.user-image {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    overflow: visible;
+    transition: transform 0.3s ease-in-out;
+}
+
+.user-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.user-name {
+    font-size: 22px; /* Bigger font size */
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffeb3b;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect: Image zooms and Name moves down */
+.user-image:hover img {
+    transform: scale(1.8) translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+.user-image:hover ~ .user-name {
+    transform: translateY(25px);
+}
+
+.user-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.user-info strong {
+    color: #ff5722;
+}
+
+button {
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #e64a19, #ff6f00);
+    transform: scale(1.05);
+}
